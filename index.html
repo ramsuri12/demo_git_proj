@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv='cache-control' content='no-cache'> 
+    <meta http-equiv='expires' content='0'> 
+    <meta http-equiv='pragma' content='no-cache'>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest"> 
+    
+    <!-- Animate CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />  
+    
+    <title>Ram Suri</title>
+</head>
+<body>
+   <!-- navbar -->
+   <nav>
+    <h1>Ram Suri</h1>
+    <ul class="navigation">
+        <li><a href="#hero" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skill</a></li>
+        <li><a href="#internship" class="nav-link">Internships</a></li>
+        <li><a href="#projects" class="nav-link">Project</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>   
+    </ul>
+    <button class="burger-menu" id="burger-menu">
+        <ion-icon class="bars" name="menu-outline"></ion-icon>
+    </button>
+   </nav>
+   <!-- \\\\\\\\\\\\\  -->
+   <!-- hero -->
+   <section class="hero" id="hero">
+       <img src="Photo_Ram_Suri_EE_155.jpg" alt="ram-suri" loading="lazy" class="hero-img">
+       <div class="bio animate__animated animate__shakeX">
+           <h2 class="bio-title">About me</h2>
+           <p class="bio-text">
+            I am a final year student at Delhi Technological University pursuing B.Tech in Electrical engineering with an aggregate CGPA of 8.85. I am an enthusiastic programmer. I have an intensive knowledge of various programming languages, like java, C/C++. My primary interest lies in Java and C++. I am skilled in Data Structures and Algorithms. Despite my Electrical background, I am proficient in various Computer Science domains, be it OOPS, Operating Systems, or DBMS.  
+           </p>
+       </div>
+   </section>
+   <!-- ///////// -->
+   <!-- skills section -->
+   <section class="skills" id="skills">
+    <h1> My Top Skills </h1>
+    <div class="skills-img-div animate__animated animate__pulse">
+        <img src="java-svgrepo-com.svg" alt="JAVA" class="skill-icon" loading="lazy">
+        <img src="icons8-c++.svg" alt="C++" class="skill-icon" loading="lazy">
+        <img src="icons8-javascript.svg" alt="JavaScript" class="skill-icon" loading="lazy">
+        <img src="icons8-html-5.svg" alt="HTML" class="skill-icon" loading="lazy">
+        <img src="icons8-css3.svg" alt="CSS" class="skill-icon" loading="lazy">
+    </div>
+   </section>
+   <!-- //////// -->
+   <!-- internships -->
+   <section class="internship" id="internship">
+       <h1 class="intern-head">Internships</h1>
+       <div class="intern-wrapper animate__animated animate__shakeX">
+        <div class="intern">
+            <h1>Research Intern</h1>
+            <h5>Delhi Technological University</h5>  
+            <p>
+                <ul>
+                    <li>Worked under assistant professor Mr.Ram Murti Rawat to build a model which detects fire in live surveillance videos.</li>
+                    <li>The project uses tensorflow2.0 to train a CNN model using googlenet architecture to detect fire in surveillance videos.</li>
+                </ul>
+            </p>      
+        </div>
+        
+        <div class="intern">
+            <h1>Teaching assistant</h1>
+            <h5>Pepcoding Education PVT. LTD.</h5>
+            <p>
+                <ul>
+                    <li>Responsible for mentoring 100+ students in debugging their code.</li>
+                    <li>Helped students with the concepts of data structures and algorithms.</li>
+                </ul>
+            </p>
+        </div>
+       </div>
+   </section>
+   <!-- /////// -->
+
+   <!-- projects section -->
+   <section class="projects" id="projects">
+       <h1 class="project-head"> My Projects</h1>
+       <div class="project-wrapper">
+           <div class="project-list">
+               <img src="excel_clone.png" alt="excel_clone" loading="lazy" class="project-img">
+               <p>
+                Created a Spreadsheet application using Vanilla JavaScript, HTML and CSS. Implemented formatting and alignment with different CSS properties. Used Graph Data Structure to implement excel formula.
+               </p>
+           </div>
+           <div class="project-list">
+            <img src="open_whiteboard.png" alt="open_whiteboard" loading="lazy" class="project-img">
+            <p>
+                Created a realtime whiteboard built using Vanilla JavaScript, HTML and CSS. Used Socket.io and Node events to reflect back realtime changes to multiple users. Created Undo-Redo features for the board using Arrays as a stack by storing Positions, Colours and width of the Pen and Erase.
+            </p>
+            </div>
+            <div class="project-list">
+                <img src="web_parsing.png" alt="web_parsing" loading="lazy" class="project-img">
+                <p>
+                    Build a web scrapper that scrapes details of batsman of each team that played in a particular IPL. Request package was used to make parallel requests to the server and cheerio was used to extract data out of it.  
+                </p>
+            </div>
+       </div>
+   </section>
+   <!-- ///// -->
+
+   <!-- contact me -->
+   <section class="contact" id="contact">
+    <h2>Get In Touch With Me</h2>
+    <div class="contact-form-container">
+      <div class="contact-form">
+        <form action="https://formspree.io/f/mvolobqj" method="POST">
+          <div class="form-control">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="sender-name"
+              placeholder="Enter Your Name"
+              class="input-field"
+              required
+            />
+          </div>
+          <div class="form-control">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="sender-email"
+              placeholder="Enter Your Email"
+              class="input-field"
+              required
+            />
+          </div>
+          <div class="form-control">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              cols="60"
+              rows="10"
+              placeholder="Enter Your Message"
+              name="message"
+              class="input-field"
+              required
+            ></textarea>
+          </div>
+          <input
+            type="submit"
+            value="Submit"
+            id="submit-btn"
+            class="submit-btn"
+          />
+        </form>
+      </div>
+    </div>
+  </section>
+   <!-- // -->
+
+   <!-- socials -->
+   <div class="social-icon-wrapper">
+       <a href="https://www.linkedin.com/in/ram-suri-693301165/"><img src="icons8-linkedin.svg" alt="Linkedin" loading="lazy" class="social-icon"></a>
+       <a href="https://github.com/ramsuri12"><img src="icons8-github.svg" alt="Github" loading="lazy" class="social-icon"></a>
+       <a href="https://leetcode.com/ramsuri/"><img src="leetcode.svg" alt="Leetcode" loading="lazy" class="social-icon"></a>
+   </div>
+
+
+   <!-- ///// -->
+
+  
+
+
+   <!-- <script src="/Users/ramsuri/Desktop/new_project/app.js"></script> -->
+
+   <!-- Ion Icons -->
+   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>   
+</body>
+</html>
